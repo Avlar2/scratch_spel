@@ -1,5 +1,55 @@
 
 h1 {
-    color: rgb(224, 0, 0);
+    color: rgb(255, 0, 0);
     font-size: 2em;
+    font: bold 2em sans-serif;
+}
+h2 {
+    color: rgb(168, 0, 0);
+    font-size: 1.5em;
+    font: bold 1.5em sans-serif;
+}
+h3 {
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font: courier 1em sans-serif;
+}
+h4 {
+    color: rgb(97, 97, 97);
+    font-size: 0.8em;
+    font: bold 0.8em sans-serif;
+}
+body {
+    background-color: rgb(0, 0, 0); /* Ändra till önskad färg */
+}
+h5 {
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font: bold 1em sans-serif;
+}
+.hover-image {
+    display: none; /* Dölj bilden som standard */
+    position: absolute;
+    z-index: 10;
+    margin-top: 10px; /* Justera positionen om nödvändigt */
+}
+
+a:hover .hover-image {
+    display: block; /* Visa bilden vid hover */
+}
+.hover-image img {
+    width: 200px; /* Ändra bredden till önskad storlek */
+    height: auto; /* Behåll proportionerna */
+    border-radius: 5px; /* Valfritt: Gör hörnen rundade */
+}
+body.dark-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+body.dark-mode {
+h5 {
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    font: bold 1em sans-serif;
+}
 }
