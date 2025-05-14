@@ -7,14 +7,15 @@
 
 
                 <div class="menu_outline">
-                    <h2>  Red Moth Games</h2>
+                    <img src="images/RM_logo(500X500).png.png" alt="Red Moth Logo" style="height: 90%; vertical-align: middle; margin-right: 8px;">
+                    <h2 style="display: inline; vertical-align: middle;">Red Moth Games</h2>
                     <script>
                         function toggleTheme() {
                         const stylesheet = document.getElementById('theme-stylesheet');
                         const button = document.getElementById('theme-toggle-button');
                         if (stylesheet.getAttribute('href') === 'style.css') {
                         stylesheet.setAttribute('href', 'light_mode.style.css');
-                        button.textContent = '☀️Light Mode';
+                        button.textContent = 'Light Mode';
                         } else {
                         stylesheet.setAttribute('href', 'style.css');
                         button.textContent = 'Dark Mode';
@@ -38,11 +39,13 @@
 
                 <section>
 
-                    <div class="heading_frame centered">
+                    <div class="min_header_box centered">
                         <h1>my best games</h1>
                     </div>
 
                     <div class="game_cards_container">
+
+
 
                         <div class="game_card">
 
@@ -53,45 +56,70 @@
                             </div>
 
                                 <a href="https://scratch.mit.edu/projects/1060371936/fullscreen/" target="_blank">
-                                    <h5>Uranium Fever</h5>
+                                    <button class="play_game_button" onclick="window.open('https://scratch.mit.edu/projects/1060371936/fullscreen/', '_blank')">Spela</button>
                                 </a>
 
-                                <h4>this is a game i made in 2024. It's about scavenging after uranium in old mines</h4>
+                        </div>      
 
+                        <div class="game_card">
 
-                            <div class="game_card">
-
-                                <a href="https://scratch.mit.edu/projects/831914613/fullscreen/" target="_blank">
-                                    <h5>Kaboom!</h5>
-                                    <span class="hover-image">
-                                        <img src="images\img.kaboom.png" alt="Uranium Fever">
-                                    </span>
-                                </a>
-                                <h4>this is a game i made in 2022 as a school project. It's about shooting a target at different levels witch the game makes progressively harder by introducing more features.</h4>
+                            <div class="game_thumbnail_image">
+                                <img src="images/kaboom.thumbnail.png" alt="Kaboom!" style="width: 100%; height: auto;">
                             </div>
 
+                            <a href="https://scratch.mit.edu/projects/831914613/fullscreen/" target="_blank">
+                                <button class="play_game_button" onclick="window.open('https://scratch.mit.edu/projects/831914613/fullscreen/', '_blank')">Spela</button>
+                            </a>
 
-                            <div class="game_card">                  
-                                <a href="https://scratch.mit.edu/projects/953442775/fullscreen/" target="_blank">
-                                    <h5>Dead Fish Simulator</h5>
-                                    <span class="hover-image">
-                                        <img src="images/img.D.F.S.png" alt="Uranium Fever">
-                                    </span>
-                                </a>
-
-                                <h4>this is a game i made in 2023 it has advanced level design and is very fun to play.</h4>
-
-                            </div>
-    
                         </div>
 
+                        <div class="game_card">
+
+                            <div class="game_thumbnail_image">
+                                <img src="images/interstellar_adventure_thumbnail.png" alt="Kaboom!" style="width: 100%; height: auto;">
+                            </div>
+
+                            <a href="https://scratch.mit.edu/projects/912436635/fullscreen/" target="_blank">
+                                <button class="play_game_button" onclick="window.open('https://scratch.mit.edu/projects/912436635/fullscreen/', '_blank')">Spela</button>
+                            </a>
+
+                        </div>
+
+                        <div class="game_card">
+
+                            <div class="game_thumbnail_image">
+                                <img src="images/Grogs_climbing.mouse_thumbnail.png" alt="Kaboom!" style="width: 100%; height: auto;">
+                            </div>
+
+                            <a href="https://scratch.mit.edu/projects/1094600790/fullscreen/" target="_blank">
+                                <button class="play_game_button" onclick="window.open('https://scratch.mit.edu/projects/1094600790/fullscreen/', '_blank')">Spela</button>
+                            </a>
+
+                        </div>
+
+                        <div class="game_card">                  
+                            <a href="https://scratch.mit.edu/projects/953442775/fullscreen/" target="_blank">
+                                <h5>Dead Fish Simulator</h5>
+                                <span class="hover-image">
+                                    <img src="images/img.D.F.S.png" alt="Uranium Fever">
+                                 </span>
+                            </a>
+
+                            <h4>this is a game i made in 2023 it has advanced level design and is very fun to play.</h4>
+
+                        </div>
+    
                     </div>
 
                 </section>
 
+                <div class="min_header_box centered">
+                        <h1>Games Under Development</h1>
+                </div>
+
                 <div class="game_cards_container">
                     <section>
-                        <h2>Games Under Development</h2>
+
                         <ul>
                             <li><a href="https://scratch.mit.edu/projects/1151305488/fullscreen/" target="_blank"><h5>multi spacialy dimentional Tic-Tac-Toe 3.0</h5></a></li><h4>this is a tic-tac-toe game that you will use all spatial dimensions.</h4>
                             <li><a href="https://scratch.mit.edu/projects/1110281727/fullscreen/" target="_blank"><h5>littel guy with blue clothes fights mutated flesh blobs</h5></a></li><h4> this game is about a little guy with blue clothes fighting mutated flesh blobs. (i don't know wath to call it)</h4>
@@ -104,9 +132,10 @@
 
         <footer>
             <h6>
-                2025-RM-Games
+                last updated 2025-05-14
             </h6>
         </footer>
+        <h6>RM-Games</h6>
 
 
         <div class="background-image">
@@ -129,3 +158,4 @@
                 updateBackgroundImage();
             </script>
         </div>
+    </html> 
