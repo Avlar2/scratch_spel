@@ -8,13 +8,7 @@
     </head>
     <body>
         <header>
-                        <button id="dark-mode-toggle">Toggle Dark Mode</button>
-<script>
-    const toggle = document.getElementById('dark-mode-toggle');
-    toggle.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-    });
-</script>
+
             <h1>Welcome to My Web Page</h1>
         </header>
         <main>
@@ -23,53 +17,60 @@
                 <h4>my name is Alvar and i like to programe games in scratch<h4>
                 <li><a href="https://scratch.mit.edu/users/Alvar_Lindell/" target="_blank"><h5>My Scratch Acount</h5></a></li>
             </section>
-            <section>
-                <h2>my best games</h2>
-                <ul>
-        <li>
+
+
+
+
+
+
+
+<section>
+    <div class="game_cards_container">
+                <h1>my best games</h1>
+    </div>
+    <div class="game_cards_container">
+        <div class="game_card">
+
+                <div class="game_thumbnail_image">
+                    
+                            <img src="images/uranfev.thumbnail.2.png">
+
+                </div>
+
             <a href="https://scratch.mit.edu/projects/1060371936/fullscreen/" target="_blank">
                 <h5>Uranium Fever</h5>
-                <span class="hover-image">
-                    <img src="images\img_1.png" alt="Uranium Fever">
-                </span>
-            </a>
-        </li>
 
-                    <h4> this is a game i made in 2024. It's about scavenging after uranium in old mines</h4>
-                            <li>
+            </a>
+                    <h4>this is a game i made in 2024. It's about scavenging after uranium in old mines</h4>
+        </div>
+
+
+        <div class="game_card">
             <a href="https://scratch.mit.edu/projects/831914613/fullscreen/" target="_blank">
                 <h5>Kaboom!</h5>
                 <span class="hover-image">
                     <img src="images\img.kaboom.png" alt="Uranium Fever">
                 </span>
             </a>
-        </li>
-
                     <h4>this is a game i made in 2022 as a school project. It's about shooting a target at different levels witch the game makes progressively harder by introducing more features.</h4>
-                                <a href="https://scratch.mit.edu/projects/849320281/fullscreen/" target="_blank">
-                <h5>Kaboom! 2</h5>
-                <span class="hover-image">
-                    <img src="images\img.kaboom.2.png" alt="Uranium Fever">
-                </span>
-            </a>
-        </li>
+        </div>
 
-                    <h4>this is a game i made in 2023. It's a sequel to Kaboom 1</h4>
-                                        
-                                <a href="https://scratch.mit.edu/projects/953442775/fullscreen/" target="_blank">
+
+        <div class="game_card">                  
+            <a href="https://scratch.mit.edu/projects/953442775/fullscreen/" target="_blank">
                 <h5>Dead Fish Simulator</h5>
                 <span class="hover-image">
                     <img src="images/img.D.F.S.png" alt="Uranium Fever">
                 </span>
             </a>
-        </li>
-
                     <h4>this is a game i made in 2023 it has advanced level design and is very fun to play.</h4>
+        </div>
+    
+                        
+    </div>
+</section>
 
-                   
-                    
-                </ul>
-            </section>
+
             <section>
                 <h2>games i'm working on</h2>
                 <ul>
@@ -79,7 +80,29 @@
                     
                 </ul>
             </section>
+
         </main>
         <footer><h4>2025-alvar</h4></footer>
-    </body>
-</html>
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+
+            .background-image {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background-image: url('images/Alvar_logo.png'); /* Replace with your image path */
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+            }
+        </style>
+
+        <div class="background-image"></div>
