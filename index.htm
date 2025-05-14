@@ -1,108 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Web Page</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-
-            <h1>Welcome to My Web Page</h1>
-        </header>
-        <main>
-            <section>
-                <h2>About Me</h2>
-                <h4>my name is Alvar and i like to programe games in scratch<h4>
-                <li><a href="https://scratch.mit.edu/users/Alvar_Lindell/" target="_blank"><h5>My Scratch Acount</h5></a></li>
-            </section>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link id="theme-stylesheet" rel="stylesheet" href="style.css">
 
 
-
-
-
-
-
-<section>
-    <div class="game_cards_container">
-                <h1>my best games</h1>
-    </div>
-    <div class="game_cards_container">
-        <div class="game_card">
-
-                <div class="game_thumbnail_image">
-                    
-                            <img src="images/uranfev.thumbnail.2.png">
+                <div class="menu_outline">
+                    <h2>  Red Moth Games</h2>
+                    <script>
+                        function toggleTheme() {
+                        const stylesheet = document.getElementById('theme-stylesheet');
+                        const button = document.getElementById('theme-toggle-button');
+                        if (stylesheet.getAttribute('href') === 'style.css') {
+                        stylesheet.setAttribute('href', 'light_mode.style.css');
+                        button.textContent = '☀️Light Mode';
+                        } else {
+                        stylesheet.setAttribute('href', 'style.css');
+                        button.textContent = 'Dark Mode';
+                        }
+                        }
+                    </script>
+                        <button id="scratch-profile-button" onclick="window.open('https://scratch.mit.edu/users/Alvar_Lindell/', '_blank')">My Scratch Account</button>
+                        <button id="theme-toggle-button" onclick="toggleTheme()">Light Mode</button>
 
                 </div>
+   
+        </head>
 
-            <a href="https://scratch.mit.edu/projects/1060371936/fullscreen/" target="_blank">
-                <h5>Uranium Fever</h5>
+            <header>
+                <div class="heading_frame centered">
+                    <h1>Welcome to My Web Page</h1>
+                </div>
+            </header>
 
-            </a>
-                    <h4>this is a game i made in 2024. It's about scavenging after uranium in old mines</h4>
-        </div>
+            <main>
 
+                <section>
 
-        <div class="game_card">
-            <a href="https://scratch.mit.edu/projects/831914613/fullscreen/" target="_blank">
-                <h5>Kaboom!</h5>
-                <span class="hover-image">
-                    <img src="images\img.kaboom.png" alt="Uranium Fever">
-                </span>
-            </a>
-                    <h4>this is a game i made in 2022 as a school project. It's about shooting a target at different levels witch the game makes progressively harder by introducing more features.</h4>
-        </div>
+                    <div class="heading_frame centered">
+                        <h1>my best games</h1>
+                    </div>
 
+                    <div class="game_cards_container">
 
-        <div class="game_card">                  
-            <a href="https://scratch.mit.edu/projects/953442775/fullscreen/" target="_blank">
-                <h5>Dead Fish Simulator</h5>
-                <span class="hover-image">
-                    <img src="images/img.D.F.S.png" alt="Uranium Fever">
-                </span>
-            </a>
-                    <h4>this is a game i made in 2023 it has advanced level design and is very fun to play.</h4>
-        </div>
-    
-                        
-    </div>
-</section>
+                        <div class="game_card">
 
-
-            <section>
-                <h2>games i'm working on</h2>
-                <ul>
-                    <li><a href="https://scratch.mit.edu/projects/1151305488/fullscreen/" target="_blank"><h5>multi spacialy dimentional Tic-Tac-Toe 3.0</h5></a></li><h4>this is a tic-tac-toe game that you will use all spatial dimensions.</h4>
-                    <li><a href="https://scratch.mit.edu/projects/1110281727/fullscreen/" target="_blank"><h5>littel guy with blue clothes fights mutated flesh blobs</h5></a></li><h4> this game is about a little guy with blue clothes fighting mutated flesh blobs. (i don't know wath to call it)</h4>
-                    <li><a href="https://scratch.mit.edu/projects/1166373596/fullscreen/" target="_blank"><h5>the looming</h5></a></li><h4>in This game you play as a creature with a blue robe and red glowing eyes.</h4>
+                            <div class="game_thumbnail_image">
                     
-                </ul>
-            </section>
+                                <img src="images/uranfev.thumbnail.2.png">
 
-        </main>
-        <footer><h4>2025-alvar</h4></footer>
+                            </div>
 
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-                overflow-x: hidden;
-            }
+                                <a href="https://scratch.mit.edu/projects/1060371936/fullscreen/" target="_blank">
+                                    <h5>Uranium Fever</h5>
+                                </a>
 
-            .background-image {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: -1;
-                background-image: url('images/Alvar_logo.png'); /* Replace with your image path */
-                background-size: cover;
-                background-attachment: fixed;
-                background-position: center;
-            }
-        </style>
+                                <h4>this is a game i made in 2024. It's about scavenging after uranium in old mines</h4>
 
-        <div class="background-image"></div>
+
+                            <div class="game_card">
+
+                                <a href="https://scratch.mit.edu/projects/831914613/fullscreen/" target="_blank">
+                                    <h5>Kaboom!</h5>
+                                    <span class="hover-image">
+                                        <img src="images\img.kaboom.png" alt="Uranium Fever">
+                                    </span>
+                                </a>
+                                <h4>this is a game i made in 2022 as a school project. It's about shooting a target at different levels witch the game makes progressively harder by introducing more features.</h4>
+                            </div>
+
+
+                            <div class="game_card">                  
+                                <a href="https://scratch.mit.edu/projects/953442775/fullscreen/" target="_blank">
+                                    <h5>Dead Fish Simulator</h5>
+                                    <span class="hover-image">
+                                        <img src="images/img.D.F.S.png" alt="Uranium Fever">
+                                    </span>
+                                </a>
+
+                                <h4>this is a game i made in 2023 it has advanced level design and is very fun to play.</h4>
+
+                            </div>
+    
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <div class="game_cards_container">
+                    <section>
+                        <h2>Games Under Development</h2>
+                        <ul>
+                            <li><a href="https://scratch.mit.edu/projects/1151305488/fullscreen/" target="_blank"><h5>multi spacialy dimentional Tic-Tac-Toe 3.0</h5></a></li><h4>this is a tic-tac-toe game that you will use all spatial dimensions.</h4>
+                            <li><a href="https://scratch.mit.edu/projects/1110281727/fullscreen/" target="_blank"><h5>littel guy with blue clothes fights mutated flesh blobs</h5></a></li><h4> this game is about a little guy with blue clothes fighting mutated flesh blobs. (i don't know wath to call it)</h4>
+                            <li><a href="https://scratch.mit.edu/projects/1166373596/fullscreen/" target="_blank"><h5>the looming</h5></a></li><h4>in This game you play as a creature with a blue robe and red glowing eyes.</h4>
+                    
+                        </ul>
+                    </section>
+                </div>
+            </main>
+
+        <footer>
+            <h6>
+                2025-RM-Games
+            </h6>
+        </footer>
+
+
+        <div class="background-image">
+            <img id="background-image" src="images/background.3.gif" alt="Background Image">
+            <script>
+                function updateBackgroundImage() {
+                    const stylesheet = document.getElementById('theme-stylesheet');
+                    const backgroundImage = document.getElementById('background-image');
+                    if (stylesheet.getAttribute('href') === 'style.css') {
+                        backgroundImage.setAttribute('src', 'images/background_dark.gif');
+                    } else {
+                        backgroundImage.setAttribute('src', 'images/background_light.gif');
+                    }
+                }
+
+                // Update background image on theme toggle
+                document.getElementById('theme-toggle-button').addEventListener('click', updateBackgroundImage);
+
+                // Initial background image setup
+                updateBackgroundImage();
+            </script>
+        </div>
