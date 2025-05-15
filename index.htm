@@ -3,27 +3,27 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link id="theme-stylesheet" rel="stylesheet" href="style.css">
+            <link id="theme-stylesheet" rel="stylesheet" href="Dark_mode.style.css">
 
 
                 <div class="menu_outline">
-                    <img src="images/RM_logo(500X500).png.png" alt="Red Moth Logo" style="height: 90%; vertical-align: middle; margin-right: 8px;">
+                    <img src="images/RM_logo(500X500).png" alt="Red Moth Logo" style="height: 90%; vertical-align: middle; margin-right: 8px;">
                     <h2 style="display: inline; vertical-align: middle;">Red Moth Games</h2>
                     <script>
                         function toggleTheme() {
                         const stylesheet = document.getElementById('theme-stylesheet');
                         const button = document.getElementById('theme-toggle-button');
-                        if (stylesheet.getAttribute('href') === 'style.css') {
+                        if (stylesheet.getAttribute('href') === 'Dark_mode.style.css') {
                         stylesheet.setAttribute('href', 'light_mode.style.css');
                         button.textContent = 'Light Mode';
                         } else {
-                        stylesheet.setAttribute('href', 'style.css');
+                        stylesheet.setAttribute('href', 'Dark_mode.style.css');
                         button.textContent = 'Dark Mode';
                         }
                         }
                     </script>
-                        <button id="scratch-profile-button" onclick="window.open('https://scratch.mit.edu/users/Alvar_Lindell/', '_blank')">My Scratch Account</button>
-                        <button id="theme-toggle-button" onclick="toggleTheme()">Light Mode</button>
+                        <button id="scratch-profile-button" class="button" "window.open('https://scratch.mit.edu/users/Alvar_Lindell/', '_blank')">My Scratch Account</button>
+                        <button id="theme-toggle-button" class="button" onclick="toggleTheme()">Light Mode</button>
 
                 </div>
    
@@ -44,31 +44,15 @@
                     </div>
 
                     <div class="game_cards_container">
-
-
-
+      
                         <div class="game_card">
 
                             <div class="game_thumbnail_image">
-                    
-                                <img src="images/uranfev.thumbnail.2.png">
-
-                            </div>
-
-                                <a href="https://scratch.mit.edu/projects/1060371936/fullscreen/" target="_blank">
-                                    <button class="play_game_button" onclick="window.open('https://scratch.mit.edu/projects/1060371936/fullscreen/', '_blank')">Spela</button>
-                                </a>
-
-                        </div>      
-
-                        <div class="game_card">
-
-                            <div class="game_thumbnail_image">
-                                <img src="images/kaboom.thumbnail.png" alt="Kaboom!" style="width: 100%; height: auto;">
+                                <img src="images/Kaboom-thumbnail.png" alt="Kaboom!" style="width: 100%; height: auto;">
                             </div>
 
                             <a href="https://scratch.mit.edu/projects/831914613/fullscreen/" target="_blank">
-                                <button class="play_game_button" onclick="window.open('https://scratch.mit.edu/projects/831914613/fullscreen/', '_blank')">Spela</button>
+                                <button class="play_game_button button" onclick="window.open('https://scratch.mit.edu/projects/831914613/fullscreen/', '_blank')">Play</button>
                             </a>
 
                         </div>
@@ -76,11 +60,23 @@
                         <div class="game_card">
 
                             <div class="game_thumbnail_image">
-                                <img src="images/interstellar_adventure_thumbnail.png" alt="Kaboom!" style="width: 100%; height: auto;">
+                                <img src="images/Uranium_Fever-thumbnail.png" alt="Kaboom!" style="width: 100%; height: auto;">
+                            </div>
+
+                            <a href="https://scratch.mit.edu/projects/1060371936/fullscreen/" target="_blank">
+                                <button class="play_game_button button" onclick="window.open('https://scratch.mit.edu/projects/1060371936/fullscreen/', '_blank')">Play</button>
+                            </a>
+
+                        </div>
+
+                        <div class="game_card">
+
+                            <div class="game_thumbnail_image">
+                                <img src="images/Interstellar_Adventure-thumbnail.png" alt="Kaboom!" style="width: 100%; height: auto;">
                             </div>
 
                             <a href="https://scratch.mit.edu/projects/912436635/fullscreen/" target="_blank">
-                                <button class="play_game_button" onclick="window.open('https://scratch.mit.edu/projects/912436635/fullscreen/', '_blank')">Spela</button>
+                                <button class="play_game_button button" onclick="window.open('https://scratch.mit.edu/projects/912436635/fullscreen/', '_blank')">Play</button>
                             </a>
 
                         </div>
@@ -88,24 +84,38 @@
                         <div class="game_card">
 
                             <div class="game_thumbnail_image">
-                                <img src="images/Grogs_climbing.mouse_thumbnail.png" alt="Kaboom!" style="width: 100%; height: auto;">
+                                <img src="images/Grog's_Climbing-thumbnail.png" alt="Kaboom!" style="width: 100%; height: auto;">
                             </div>
 
                             <a href="https://scratch.mit.edu/projects/1094600790/fullscreen/" target="_blank">
-                                <button class="play_game_button" onclick="window.open('https://scratch.mit.edu/projects/1094600790/fullscreen/', '_blank')">Spela</button>
+                                <button class="play_game_button button" onclick="window.open('https://scratch.mit.edu/projects/1094600790/fullscreen/', '_blank')">Play</button>
                             </a>
 
                         </div>
 
-                        <div class="game_card">                  
+                                                <div class="game_card">
+
+                            <div class="game_thumbnail_image">
+                                <img src="images/Dead_Fish_Simulator-thumbnail.png" alt="Kaboom!" style="width: 100%; height: auto;">
+                            </div>
+
                             <a href="https://scratch.mit.edu/projects/953442775/fullscreen/" target="_blank">
-                                <h5>Dead Fish Simulator</h5>
-                                <span class="hover-image">
-                                    <img src="images/img.D.F.S.png" alt="Uranium Fever">
-                                 </span>
+                                <button class="play_game_button button" onclick="window.open('https://scratch.mit.edu/projects/953442775/fullscreen/', '_blank')">Play</button>
                             </a>
 
-                            <h4>this is a game i made in 2023 it has advanced level design and is very fun to play.</h4>
+                        </div>
+
+                        
+
+                        <div class="game_card">
+
+                            <div class="game_thumbnail_image">
+                                <img src="images/Jet_Cat-thumbnail.png" alt="Kaboom!" style="width: 100%; height: auto;">
+                            </div>
+
+                            <a href="https://scratch.mit.edu/projects/840018645/fullscreen/" target="_blank">
+                                <button class="play_game_button button" onclick="window.open('https://scratch.mit.edu/projects/840018645/fullscreen/', '_blank')">Play</button>
+                            </a>
 
                         </div>
     
@@ -120,34 +130,35 @@
                 <div class="game_cards_container">
                     <section>
 
-                        <ul>
-                            <li><a href="https://scratch.mit.edu/projects/1151305488/fullscreen/" target="_blank"><h5>multi spacialy dimentional Tic-Tac-Toe 3.0</h5></a></li><h4>this is a tic-tac-toe game that you will use all spatial dimensions.</h4>
-                            <li><a href="https://scratch.mit.edu/projects/1110281727/fullscreen/" target="_blank"><h5>littel guy with blue clothes fights mutated flesh blobs</h5></a></li><h4> this game is about a little guy with blue clothes fighting mutated flesh blobs. (i don't know wath to call it)</h4>
-                            <li><a href="https://scratch.mit.edu/projects/1166373596/fullscreen/" target="_blank"><h5>the looming</h5></a></li><h4>in This game you play as a creature with a blue robe and red glowing eyes.</h4>
+                       
+                        <li><a href="https://scratch.mit.edu/projects/1151305488/fullscreen/" target="_blank"><h5>multi spacialy dimentional Tic-Tac-Toe 3.0</h5></a></li><h4>this is a tic-tac-toe game that you will use all spatial dimensions.</h4>
+                        <li><a href="https://scratch.mit.edu/projects/1110281727/fullscreen/" target="_blank"><h5>littel guy with blue clothes fights mutated flesh blobs</h5></a></li><h4> this game is about a little guy with blue clothes fighting mutated flesh blobs. (i don't know wath to call it)</h4>
+                        <li><a href="https://scratch.mit.edu/projects/1166373596/fullscreen/" target="_blank"><h5>the looming</h5></a></li><h4>in This game you play as a creature with a blue robe and red glowing eyes.</h4>
+                        <li><a href="https://scratch.mit.edu/projects/1175171353/fullscreen/" target="_blank"><h5>Floor After Flore</h5></a></li><h4>In this game, you wake up alone in an empty office building with only a flashlight. Something is stalking you in the dark.</h4>
                     
-                        </ul>
+                        
                     </section>
                 </div>
             </main>
 
         <footer>
             <h6>
-                last updated 2025-05-14
+                last updated 2025-05-15
             </h6>
         </footer>
         <h6>RM-Games</h6>
 
 
         <div class="background-image">
-            <img id="background-image" src="images/background.3.gif" alt="Background Image">
+            <img id="background-image" src="images/Background-Dark.gif" alt="Background Image">
             <script>
                 function updateBackgroundImage() {
                     const stylesheet = document.getElementById('theme-stylesheet');
                     const backgroundImage = document.getElementById('background-image');
-                    if (stylesheet.getAttribute('href') === 'style.css') {
-                        backgroundImage.setAttribute('src', 'images/background_dark.gif');
+                    if (stylesheet.getAttribute('href') === 'Dark_mode.style.css') {
+                        backgroundImage.setAttribute('src', 'images/Background-Dark.gif');
                     } else {
-                        backgroundImage.setAttribute('src', 'images/background_light.gif');
+                        backgroundImage.setAttribute('src', 'images/Background-Light.png');
                     }
                 }
 
